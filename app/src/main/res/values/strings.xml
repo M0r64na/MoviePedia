@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">MoviePedia</string>
+    <string name="add_movie">Add Movie</string>
+    <string name="view_movies">View Movies</string>
+    <string name="submit">Submit</string>
+    <string name="desc">Description</string>
+    <string name="name">Name</string>
+    <string name="screenplay">Screenplay</string>
+    <string name="genre">Genre</string>
+    <string name="director">Director</string>
+    <string name="image">image</string>
+    <string name="delete">Delete</string>
+    <string name="edit">Edit</string>
+    <string name="app_description">Welcome to MovieMania, where your movie adventures begin! Immerse yourself in the ultimate cinematic experience as you explore our vast collection of movies. From timeless classics to the latest blockbusters, our app acts as a portal to a world of entertainment. Discover hidden gems, follow your favorite actors, and dive into a universe of movie magic. With MovieMania, you hold the power to create your own movie marathon and make every night a movie night. Get ready to be captivated, thrilled, and entertained like never before!</string>
+    <string name="no">no</string>
+    <string name="edit_that_movie">Edit That Movie</string>
+    <string name="movies">All Movies</string>
+</resources>

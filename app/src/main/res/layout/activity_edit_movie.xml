@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.AddMovieActivity">
+
+    <EditText
+        android:id="@+id/nameEdit"
+        android:layout_width="148dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="160dp"
+        android:layout_marginEnd="8dp"
+        android:autofillHints=""
+        android:hint="@string/name"
+        android:inputType="text"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toStartOf="@id/genreEdit"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/genreEdit"
+        android:layout_width="148dp"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:hint="@string/genre"
+        android:inputType="text"
+        android:textAlignment="center"
+        app:layout_constraintTop_toTopOf="@id/nameEdit"
+        app:layout_constraintStart_toEndOf="@id/nameEdit"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <EditText
+        android:id="@+id/directorEdit"
+        android:layout_width="147dp"
+        android:layout_height="46dp"
+        android:autofillHints=""
+        android:inputType="text"
+        android:textAlignment="center"
+        android:visibility="visible"
+        android:hint="@string/director"
+        app:layout_constraintTop_toBottomOf="@id/nameEdit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/screenplayEdit"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <EditText
+        android:id="@+id/screenplayEdit"
+        android:layout_width="147dp"
+        android:layout_height="46dp"
+        android:autofillHints=""
+        android:inputType="text"
+        android:textAlignment="center"
+        android:visibility="visible"
+        android:hint="@string/screenplay"
+        app:layout_constraintTop_toTopOf="@id/directorEdit"
+        app:layout_constraintStart_toEndOf="@id/directorEdit"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <EditText
+        android:id="@+id/descriptionEdit"
+        android:layout_width="226dp"
+        android:layout_height="142dp"
+        android:autofillHints=""
+        android:inputType="text"
+        android:hint="@string/desc"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@id/directorEdit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <ImageButton
+        android:id="@+id/imageButtonEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/desc"
+        android:visibility="visible"
+        app:srcCompat="@android:drawable/ic_input_add"
+        app:layout_constraintTop_toBottomOf="@id/descriptionEdit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/submitButtonEdit"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <Button
+        android:id="@+id/submitButtonEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/main_blue"
+        android:onClick="onSubmitBtnClicked"
+        android:text="@string/submit"
+        app:layout_constraintTop_toTopOf="@id/imageButtonEdit"
+        app:layout_constraintStart_toEndOf="@id/imageButtonEdit"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        tools:ignore="UsingOnClickInXml"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="316dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="44dp"
+        android:fontFamily="@font/amita_bold"
+        android:text="@string/edit_that_movie"
+        android:textAlignment="center"
+        android:textColor="#333333"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="@+id/genreEdit"
+        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintStart_toStartOf="@+id/nameEdit"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
